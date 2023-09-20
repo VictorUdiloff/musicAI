@@ -1,0 +1,152 @@
+body {
+    background: rgb(164,0,143);
+    background: linear-gradient(310deg, rgba(164,0,143,1) 0%, rgba(0,0,0,1) 32%);
+    color: blue;
+    font-size: 50px;
+    font-family: "Console", "Courier New", monospace;
+}
+
+
+
+.upperbutton{
+    background-color: rgba(104, 104, 104, 0.315);
+    font-size: 18px;
+    border: none;
+    padding : 10px 10px;
+    border-radius: 10px;
+    color : white;
+    font-family: "Roboto";
+}
+
+.upperbutton:hover{
+    background-color: rgba(66, 66, 66, 0.315);
+}
+.downloadbutton:hover{
+    background-color:rgba(0, 200, 100, 0.432) ;
+}
+
+.rightbox{
+    font-family: "Console", "Courier New", monospace;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.178);
+    color: rgb(255, 255, 255);
+    font-family: "Roboto";
+    font-size: 18px;
+}
+.rightmenu{
+    display: flex;
+    flex-direction: column;
+    font-family: "Console", "Courier New", monospace;
+}
+
+.downloadbutton{
+    background-color: rgba(0, 255, 136, 0.432);
+}
+
+.uploadbutton{
+    background-color: rgba(0, 255, 136, 0.432);
+    padding: 1em;
+    font-size: 20px;
+}
+
+
+.cor1{
+
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 90, 90);
+}
+
+.cor2{
+
+    width: 20px;
+    height: 20px;
+    background-color: rgb(107, 252, 94);
+}
+
+.cor3{
+
+    width: 20px;
+    height: 20px;
+    background-color: rgb(63, 201, 97);
+}
+
+.centralmenu{
+    display: inline-block;
+    background: rgb(15,0,13);
+    background: radial-gradient(circle, rgba(15,0,13,1) 47%, rgba(0,0,0,1) 100%);
+    width: 1600px;
+    height: 800px;
+    border: 5px solid black;
+    margin-top: 200 px;
+    border-radius: 10px;
+
+}
+
+.gridwrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.inputnumber{
+
+}
+
+.inputslider{
+
+ accent-color: white;
+}
+
+.duplo{
+
+    display: flex;
+}
+
+.uploadwrapper{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+
+
+.instrumentsbass{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    display: none;
+}
+
+.voice{
+    color: white;
+    justify-content: space-around;
+    text-align: center;
+    display: none;
+}
+
+.chordbutton{
+    background-color: rgba(104, 104, 104, 0.315);
+    font-size: 18px;
+    border: none;
+    padding : 10px 10px;
+    border-radius: 10px;
+    color : white;
+    font-family: "Roboto";
+}
+
+.changebutton{
+    background-color : rgb(255, 124, 1);
+}
+.changebutton:hover{
+    background-color: rgb(190, 108, 0);
+}

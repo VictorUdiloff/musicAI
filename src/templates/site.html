@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Teste</title>
+</head>
+<body>
+    
+    <div id="loadscreen" class="uploadwrapper">
+        <h3>Edit Music Using Only .mp3 Files</h3>
+        <div>
+        <label for="fileupload" class="uploadbutton">Click Here To Upload Your File</label>
+        <input id="fileupload" type="file"></input>
+        </div>
+    </div>
+    
+    
+    
+    <div id="loadedscreen" class="loadedwrapper">
+        <div class = "upmenu">
+            <imput class="upperbutton uploadbutton" type="file"> Music AI</imput>
+            <button id="drumsbutton" class ="upperbutton">Drums</button>
+            <button id="instrumentsbutton" class ="upperbutton">Instruments/Bass</button>
+            <button id="voicebutton" class ="upperbutton">Voice</button>
+            <button id="downloadbutton" class ="upperbutton downloadbutton">Download </button>
+            <audio controls>
+                <source id="originalsongpreview" src="../static/piano.mp3" type="audio/mpeg"> </source></audio>
+            </audio>
+
+    </div>
+
+    <div class="gridwrapper">
+
+        <div class="centralmenu">
+            <div id="voice" class="voice">
+                <div>
+                <h4>Change Voice:</h4>
+                <button class="downloadbutton upperbutton" >Male</button>
+                <button class="downloadbutton upperbutton" >Female</button>
+                <br>
+                <button class="changebutton upperbutton" >Change</button>
+                </div>
+                <div>
+                <h4>Change voice character</h4>
+                <fieldset>
+                    <legend>Select a Voice Model:</legend>
+                  
+                    <div>
+                      <input type="radio" id="huey" name="drone" value="huey" checked />
+                      <label for="huey">Character A</label>
+                    </div>
+                  
+                    <div>
+                      <input type="radio" id="dewey" name="drone" value="dewey" />
+                      <label for="dewey">Character B</label>
+                    </div>
+                  
+                    <div>
+                      <input type="radio" id="louie" name="drone" value="louie" />
+                      <label for="louie">Character C</label>
+                </div></fieldset>
+                <br>
+                <button class="changebutton upperbutton" >Change</button>
+            
+            </div>
+            </div>
+            <div id="instrumentsbass" class="instrumentsbass">
+                <div class="changekey">
+                    <h4>Key Detected:</h4> <h4>D major</h4>
+                    <h4>Change Key</h4>
+                    <button class="downloadbutton upperbutton" >C</button>
+                    <button class="downloadbutton upperbutton" >D</button>
+                    <button class="downloadbutton upperbutton" >E</button>
+                    <button class="downloadbutton upperbutton" >F</button>
+                    <button class="downloadbutton upperbutton" >G</button>
+                    <button class="downloadbutton upperbutton" >A</button>
+                    <button class="downloadbutton upperbutton" >B</button>
+                    <br>
+                    <button class="downloadbutton chordbutton" >Major</button>
+                    <button class="downloadbutton chordbutton" >Minor</button>
+                    <br>
+                    <button class="changebutton upperbutton" >Change</button>
+
+
+                </div>
+
+                <div class="changeprogression">
+                    <h4>Progression Detected:</h4> <h4>Change Progression</h4>
+                    <button class="downloadbutton upperbutton" >i</button>
+                    <button class="downloadbutton upperbutton" >ii</button>
+                    <button class="downloadbutton upperbutton" >iii</button>
+                    <button class="downloadbutton upperbutton" >iv</button>
+                    <button class="downloadbutton upperbutton" >v</button>
+                    <button class="downloadbutton upperbutton" >vi</button>
+                    <button class="downloadbutton upperbutton" >vii</button>
+                    <br>
+                    <button class="downloadbutton upperbutton" >I</button>
+                    <button class="downloadbutton upperbutton" >II</button>
+                    <button class="downloadbutton upperbutton" >III</button>
+                    <button class="downloadbutton upperbutton" >IV</button>
+                    <button class="downloadbutton upperbutton" >V</button>
+                    <button class="downloadbutton upperbutton" >VI</button>
+                    <button class="downloadbutton upperbutton" >VII</button>
+                    <br>
+                    <button class="changebutton upperbutton" >Change</button>
+                </div>
+                
+            
+            
+            
+            </div>
+
+
+
+        </div>
+
+        <div class="rightmenu">
+
+            <div class="rightbox">
+                <h4>Volume/Gain</h4> <input class="inputnumber" type="number"/>
+                <br>
+                <span>L</span> <input class="inputslider" type="range" value="50 "> <span>R</span>
+                <h4>Pitch</h4> <h4>Semitons</h4>
+            </div>
+
+            <div class="rightbox">
+                <div class="duplo"><div class="cor1"> </div> <h4>Notes</h4></div>
+                <div class="duplo"><div class="cor2"> </div><h4>Major Chords</h4></div>
+                <div class="duplo"><div class="cor3"> </div><h4>Minor Chords</h4></div>
+
+            </div>
+
+            <div class="rightbox">
+                <h4>Reverb</h4>
+                <input class="inputslider" type="range" value="0 ">
+                <h4>Distortion</h4>
+                <input class="inputslider" type="range" value="0 ">
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+<script src= {{ url_for("static",filename="script.js") }} ></script>
+
+</body>
+</html>
