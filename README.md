@@ -1,0 +1,3 @@
+This is my graduation projet, it is a pc app made in python. It take an audio tracks, separates it into 4 tracks: voice, bass, drums and other instruments. Each track can be edited in real time through a graphical interface.
+To use a song, put the file in the source directory, open the app, type the file name in the input box, ex:"song.mp3", then click the "separate button". The song is separated in a speed of 2 seconds per second.
+I created the graphical user interface and the audio processing functions, the neural network wasn't done by me and it's installation might be required to run my app.
